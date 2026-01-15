@@ -29,10 +29,10 @@ If you run a small or midsize business and need to make better decisions under u
 ## Live Versions
 
 - 🌐 **Web page:**  
-  https://<james-bonaguro>.github.io/<Intersection_Strategies>/
+  [https://<james-bonaguro>.github.io/<Intersection_Strategies>/](https://james-bonaguro.github.io/Intersection_Strategies/)
 
 - 📄 **Print / PDF version:**  
-  Open https://<james-bonaguro>.github.io/<Intersection_Strategies>/print.html in a browser and print to PDF
+  Open ['print.html'](https://james-bonaguro.github.io/Intersection_Strategies/print.html) in a browser and print to PDF
 
 ---
 
