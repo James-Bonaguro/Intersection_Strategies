@@ -29,16 +29,16 @@ If you run a small or midsize business and need to make better decisions under u
 ## Live Versions
 
 - 🌐 **Web page:**  
-  [https://<james-bonaguro>.github.io/<Intersection_Strategies>/](https://james-bonaguro.github.io/Intersection_Strategies/)
+  [Intersection_Strategies](https://james-bonaguro.github.io/Intersection_Strategies/)
 
 - 📄 **Print / PDF version:**  
-  Open ['print.html'](https://james-bonaguro.github.io/Intersection_Strategies/print.html) in a browser and print to PDF
+  Open [print.html](https://james-bonaguro.github.io/Intersection_Strategies/print.html) in a browser and print to PDF
 
 ---
 
 ## How to Generate the One-Page PDF
 
-1. Open `print.html` in Chrome
+1. Open [print.html](https://james-bonaguro.github.io/Intersection_Strategies/print.html) in Chrome
 2. Press **Print**
 3. Destination: **Save as PDF**
 4. Paper size: **Letter**
