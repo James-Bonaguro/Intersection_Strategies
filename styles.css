@@ -9,6 +9,7 @@
 
 *{ box-sizing:border-box; }
 html,body{ height:100%; }
+
 body{
   margin:0;
   background:var(--bg);
@@ -29,26 +30,31 @@ body{
   justify-content:space-between;
   padding-bottom:8px;
 }
+
 .header-left h1{
   margin:0;
   font-size:40px;
   letter-spacing:-0.5px;
   color:var(--black);
 }
+
 .subhead{
   margin:6px 0 0 0;
   font-size:22px;
   font-weight:700;
   color:var(--black);
 }
+
 .header-right{
   text-align:right;
   display:flex;
   flex-direction:column;
   gap:6px;
 }
+
 a{ color:var(--black); text-decoration:none; }
 a:hover{ text-decoration:underline; }
+
 .meta{ color:var(--meta); margin:0; }
 
 .mono{
@@ -79,12 +85,13 @@ a:hover{ text-decoration:underline; }
 .section-title{
   margin:2px 0 12px 0;
   font-size:13px;
-  letter-spacing:0.12em;
+  letter-spacing:0.08em;
   text-transform:uppercase;
   font-weight:800;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   color:var(--black);
 }
+
 .block{ margin:0 0 14px 0; }
 .block h3{
   margin:0 0 6px 0;
@@ -102,35 +109,31 @@ a:hover{ text-decoration:underline; }
   margin:0 0 10px 0;
 }
 
-.callout{
-  margin:14px 0 0 0;
-  padding:12px 12px;
-  border-left:4px solid var(--black);
-  background:#f7f7f7;
-  border-radius:10px;
-}
-
 .proof{
   display:flex;
   flex-direction:column;
   gap:12px;
 }
+
 .proof-item{
   padding:12px 12px;
   border:1px solid var(--line);
   border-radius:12px;
 }
+
 .proof-head{
   display:flex;
   justify-content:space-between;
   gap:12px;
   align-items:baseline;
 }
+
 .proof-head h3{
   margin:0;
   font-size:16px;
   color:var(--black);
 }
+
 .proof-item p{
   margin:8px 0 0 0;
 }
@@ -139,6 +142,7 @@ a:hover{ text-decoration:underline; }
   margin:0 0 0 18px;
   padding:0;
 }
+
 .steps li{ margin:6px 0; }
 
 .contact{
@@ -147,6 +151,7 @@ a:hover{ text-decoration:underline; }
   flex-wrap:wrap;
   margin:10px 0 0 0;
 }
+
 .btn{
   display:inline-block;
   padding:10px 12px;
@@ -156,7 +161,9 @@ a:hover{ text-decoration:underline; }
   color:#fff;
   font-weight:700;
 }
+
 .btn:hover{ text-decoration:none; filter:brightness(0.92); }
+
 .btn.secondary{
   background:#fff;
   color:var(--black);
@@ -171,6 +178,13 @@ a:hover{ text-decoration:underline; }
 }
 
 .tiny{ font-size:12px; margin-top:14px; }
+
+/* Kill ugly mid-word breaks */
+p, li{
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
+}
 
 @media (max-width: 920px){
   .grid{ grid-template-columns:1fr; }
