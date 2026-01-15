@@ -1,0 +1,150 @@
+\documentclass[10pt, letterpaper]{article}
+
+% --- Geometry & Layout ---
+\usepackage[top=1.3cm, bottom=1.3cm, left=1.4cm, right=1.4cm]{geometry}
+\usepackage{paracol} % For columns
+\usepackage{parskip} % Spacing between paragraphs
+\usepackage{xcolor}
+
+% --- Typography ---
+\usepackage{fontspec}
+\usepackage[english]{babel}
+
+% Set default/Latin font to Noto Sans
+\babelfont{rm}[
+    Scale=0.9,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic
+]{Noto Sans}
+
+% Set Monospace font for headers (The "GitHub/Tech" feel)
+\babelfont{tt}[Scale=0.9]{Noto Sans Mono}
+
+% --- Colors ---
+% STRICT MONOCHROME PALETTE
+\definecolor{headerblack}{RGB}{0, 0, 0}      % Pure Black
+\definecolor{bodyblack}{RGB}{20, 20, 20}     % Very Dark Gray
+\definecolor{metagray}{RGB}{80, 80, 80}      % Subtle Gray for meta info
+\definecolor{linegray}{RGB}{200, 200, 200}   % Divider Lines
+
+% --- Custom Commands ---
+
+% Section Header (Clean, Monospace, Black)
+\newcommand{\mysection}[1]{
+    \vspace{1.0em}
+    {\ttfamily\bfseries\uppercase{#1}}
+    \vspace{0.2em}
+    {\color{linegray}\hrule height 0.5pt}
+    \vspace{0.8em}
+}
+
+% Services Block (Sidebar)
+\newcommand{\serviceblock}[2]{
+    {\color{headerblack}\textbf{#1}} \\
+    {\small \color{bodyblack} #2}
+    \vspace{1.0em}
+}
+
+% Work Entry (Main Column)
+\newcommand{\workentry}[2]{
+    {\color{headerblack}\textbf{#1}} \\
+    {\small \color{bodyblack} #2}
+    \vspace{0.9em}
+}
+
+\begin{document}
+\pagestyle{empty}
+\columnratio{0.34} % Sidebar width
+\setlength{\columnsep}{3em} % Generous spacing between columns
+
+% Set default text color
+\color{bodyblack}
+\raggedright
+
+% --- HEADER ---
+\noindent
+\begin{minipage}[t]{0.60\textwidth}
+    {\Huge \color{headerblack}\textbf{James Bonaguro}} \\[0.4em]
+    {\LARGE \color{headerblack}\textbf{Intersection Strategies LLC}}
+\end{minipage}%
+\begin{minipage}[t]{0.40\textwidth}
+    \raggedleft
+    {\ttfamily\small james.bonaguro@gmail.com} \\
+    {\ttfamily\small 708-420-5462} \\
+    {\small \color{metagray} Orland Park, IL}
+\end{minipage}
+
+\vspace{1.2em}
+{\color{headerblack}\hrule height 1pt}
+\vspace{1.8em}
+
+\begin{paracol}{2}
+
+% --- LEFT COLUMN (Sidebar) ---
+
+\mysection{Focus Areas}
+
+\serviceblock{Industry Intelligence}{
+Competitor analysis, market trends, and mapping where your industry is heading. I track the changes so you stay ahead.
+}
+
+\serviceblock{Operations \& Tools}{
+Implementing systems that actually make work easier: scheduling tools, workflow automation, and better number visibility.
+}
+
+\serviceblock{Research \& Training}{
+Turning complex info into usable team resources. Training on tools that help with actual work, not generic tutorials.
+}
+
+\vspace{3.0em}
+
+\mysection{Connect}
+\textbf{Let's talk.} \\
+I'm not here to sell software or take over operations. I'm here to help you see what's coming and make better decisions.
+
+\vspace{1.0em}
+{\ttfamily james.bonaguro@gmail.com} \\
+{\ttfamily 708-420-5462}
+
+\vspace{4em}
+{\tiny \color{metagray} © 2025 Intersection Strategies LLC}
+
+\switchcolumn
+
+% --- RIGHT COLUMN (Main Content) ---
+
+\mysection{About Me}
+
+I grew up in Orland Park where my family owned Mercedes-Benz of Orland Park. I worked there through high school and college, covering the sales floor, finance office, and service department. That is where I learned how a business actually runs, not just from a textbook.
+
+After earning a finance degree from Miami University and spending a few years in healthcare consulting, I returned to help run the family business. I focused on modernizing our operations, implementing new finance and technology platforms, and building systems that made people's jobs easier instead of harder.
+
+Eventually, I entered the public enterprise technology space, building internal tools and workflow systems for over 150 people across multiple teams. I saw what works at scale.
+
+Now, I run Intersection Strategies to help a wide variety of businesses make sense of what's changing in their industry and figure out what to do about it.
+
+\mysection{Recent Work}
+
+\workentry{Insurance Brokerages (Chicago)}{
+Guidance on positioning in the commercial lines market. Updating training templates for new hires and delivering competitive intelligence on how other brokerages are winning larger accounts.
+}
+
+\workentry{Independent Auto Repair Shops}{
+Research on industry consolidation trends, succession planning, tariff impacts on parts sourcing, and adapting to EV service demands.
+}
+
+\workentry{Car Dealerships}{
+Market research on AI adoption in automotive retail: identifying which tools drive ROI versus what is just hype.
+}
+
+\workentry{Dental Practices}{
+Implemented Weave scheduling system with automated reminders. Cut no-shows by 35\% and freed up 6+ hours/week for front desk staff.
+}
+
+\workentry{PhD Students \& Medical Residents}{
+Training on Google's NotebookLM to synthesize academic papers and clinical protocols into usable study materials.
+}
+
+\end{paracol}
+\end{document}
